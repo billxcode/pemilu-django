@@ -1,0 +1,8 @@
+
+{% if parpols %}
+    <ul>
+        {% for parpol in parpols.all %}
+            <li><a href="show/{{ parpol.id }}">{{ parpol.nama }}</a></li>
+        {% endfor %}
+    </ul>
+{% endif %}
